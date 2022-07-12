@@ -12,5 +12,59 @@ const reverseString = (str3)=>{
   return newStr;
 };
 
+class Calculator{
+  constructor(x, y){
+    this.x = x;
+    this.y = y;
+  }
 
-module.exports = { stringLength, reverseString };
+  add(){
+    if(typeof(this.x) !== 'number' || typeof(this.y) !== 'number'){
+      throw new Error('Input is not a number');
+    }
+    else{
+      return this.x+this.y;
+    }
+  }
+
+  subtract(){
+    if(typeof(this.x) !== 'number' || typeof(this.y) !== 'number'){
+      throw new Error('Input is not a number');
+    }
+    else{
+      return this.x-this.y;
+    }
+  }
+
+  multiply(){
+    if(typeof(this.x) !== 'number' || typeof(this.y) !== 'number'){
+      throw new Error('Input is not a number');
+    }
+    else{
+      return this.x*this.y;
+    }
+  }
+
+  divide(){
+    if(typeof(this.x) !== 'number' || typeof(this.y) !== 'number'){
+      throw new Error('Input is not a number');
+    }
+    else if(this.y === 0){
+      throw new Error('invalid operation');
+    }
+    else{
+      return this.x/this.y;
+    }
+  }
+};
+
+function capitalize(string){
+  if(string === '' || typeof(string) !== 'string'){
+    throw new Error('invalid input');
+  }
+  else{
+    return string[0].toUpperCase().concat(string.slice(1));
+  }
+}
+
+module.exports = { stringLength, reverseString, Calculator, capitalize };
