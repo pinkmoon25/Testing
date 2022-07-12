@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "testing practice",
+  "main": "function.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PinkMoon25/Testing.git"
+  },
+  "author": "Tushar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PinkMoon25/Testing/issues"
+  },
+  "homepage": "https://github.com/PinkMoon25/Testing#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
